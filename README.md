@@ -1,7 +1,7 @@
 Definition List Forms
 =====================
 
-A simple mixing for turning definition lists into forms.
+A simple mixing for turning definition lists into forms. Original article can be found on http://jamessteel.co.uk/blog/dl-list-forms
 
 ### Basic Usage
 
@@ -37,3 +37,4 @@ div.formwrap {
 }
 
 ```
+
