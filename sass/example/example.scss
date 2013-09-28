@@ -1,39 +1,44 @@
+// ----------------------------------------------------------------------------------------
+// Definition List form mixin by James Steel www.jamessteel.co.uk
+// ----------------------------------------------------------------------------------------
+
 @import "lib/normalize";
 @import "../dl-form";
 
 // BASIC PAGE
+// ----------------------------------------------------------------------------------------
 
 html {-webkit-font-smoothing: antialiased;}
 
 body {width: 500px; margin: 0 auto; color: #666;}
 
-// The Form
+// FORM
+// ----------------------------------------------------------------------------------------
+
 
 .formwrap {
 
-// Include the mixin
-
-@include dlform;
-
-
-
-
-// Optional - just a bit of presentational stuff
-
-input[type=text],
-input[type=password],
-textarea,fieldset 				{border: 1px solid #dbf1f3; color: #666;}
-
-textarea						{width: 305px; outline: none;}	
-
-input[type=text],
-input[type=password] 			{width: 300px; outline: none;}
-
-textarea:focus,					
-input[type=text]:focus,
-input[type=password]:focus 		{border: 1px solid #0d2643;}
-
-select 							{width: 315px; outline: none;}
+	// Include the mixin
+	// ------------------------------------------------------------------------------------
+	@include dlform;
+	
+	// Optional - just a bit of presentational stuff
+	// ------------------------------------------------------------------------------------
+	
+	input[type=text],
+	input[type=password],
+	textarea,fieldset 				{border: 1px solid #dbf1f3; color: #666;}
+	
+	textarea						{width: 305px; outline: none;}	
+	
+	input[type=text],
+	input[type=password] 			{width: 300px; outline: none;}
+	
+	textarea:focus,					
+	input[type=text]:focus,
+	input[type=password]:focus 		{border: 1px solid #0d2643;}
+	
+	select 							{width: 315px; outline: none;}
 
 
 }
